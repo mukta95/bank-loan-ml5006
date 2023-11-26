@@ -1,23 +1,23 @@
-# fraud-detect-ml5006
-**Project Title**
-Fraud Detection in Online Transactions
+# bank-loan-ml5006
+Project Title
+Loan Approval Prediction and Model Comparison
 
-**Description**
-This project focuses on detecting fraudulent transactions in online transactions. The dataset contains information about each transaction, including the type, amount, involved parties, and whether it is a fraudulent transaction or not.
+Description
+This project aims to predict the approval of personal loans using various machine learning models. The dataset includes information about customers, such as age, experience, income, ZIP code, family size, credit card average score, education, mortgage amount, and the approval status of a personal loan.
 
-**Dataset**
-The dataset includes the following columns:
+Dataset
+The dataset contains the following columns:
 
-step: Represents a unit of time where 1 step equals 1 hour.
-type: Type of online transaction.
-amount: The amount of the transaction.
-nameOrig: Customer starting the transaction.
-oldbalanceOrg: Balance before the transaction for the originating account.
-newbalanceOrig: Balance after the transaction for the originating account.
-nameDest: Recipient of the transaction.
-oldbalanceDest: Initial balance of the recipient before the transaction.
-newbalanceDest: The new balance of the recipient after the transaction.
-isFraud: Indicates whether the transaction is a fraud or not.
+ID: Unique ID of each customer.
+Age: Customer Age.
+Experience: Customer Experience.
+Income: Customer Income.
+ZIP Code: Customer Address Zipcode.
+Family: Number of Family Members.
+CCAvg: Credit Card Average Score.
+Education: Customer Education.
+Mortgage: Mortgage Amount.
+Personal Loan: Binary variable indicating loan approval (0 = Not Approved, 1 = Approved).
 
 **Project Structure**
 
@@ -25,18 +25,17 @@ isFraud: Indicates whether the transaction is a fraud or not.
 Handle missing values.
 Check for outliers.
 Explore the distribution of each feature.
-Analyze the distribution of fraudulent transactions.
 2. Feature Engineering:
 Create new features if necessary.
 Encode categorical variables.
 3. Data Visualization:
-Create visualizations to better understand the relationships between different features and the target variable (isFraud).
+Create visualizations to better understand the relationships between different features and the target variable Personal Loan.
 4. Model Building:
 Split the data into training and testing sets.
-Choose a suitable machine learning model for fraud detection (e.g., logistic regression, random forest, etc.).
+Choose a suitable machine learning model for loan approval prediction (e.g., logistic regression, random forest, etc.).
 Train the model on the training set.
 5. Model Evaluation:
 Evaluate the model's performance on the testing set using appropriate metrics (precision, recall, F1 score, etc.).
 6. Conclusion:
 Summarize the findings from your analysis.
-Discuss the effectiveness of the model in detecting fraudulent transactions.
+Discuss the effectiveness of the model in predicting personal loan approval.
